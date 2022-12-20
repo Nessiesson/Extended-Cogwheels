@@ -10,6 +10,8 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -32,6 +34,7 @@ public abstract class MixinKineticTileEntity {
     public void KineticTileEntity(BlockEntityType<?> typeIn, BlockPos pos, BlockState state, CallbackInfo ci) {
         this.pos = pos;
     }
+    @OnlyIn(Dist.CLIENT)
     @Inject(at = @At("TAIL"), method = "tick", remap = false)
     private void tick(CallbackInfo ci) {
         Minecraft mc = Minecraft.getInstance();
