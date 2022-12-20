@@ -4,7 +4,6 @@ import com.jozufozu.flywheel.backend.Backend;
 import com.jozufozu.flywheel.core.PartialModel;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.rabbitminers.extendedgears.basecog.ICustomCogWheel;
-import com.rabbitminers.extendedgears.index.ECPartials;
 import com.simibubi.create.AllBlockPartials;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.contraptions.base.KineticTileEntity;

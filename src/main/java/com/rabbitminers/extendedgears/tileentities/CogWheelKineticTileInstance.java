@@ -7,7 +7,6 @@ import com.jozufozu.flywheel.util.transform.TransformStack;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import com.rabbitminers.extendedgears.basecog.ICustomCogWheel;
-import com.rabbitminers.extendedgears.index.ECPartials;
 import com.simibubi.create.AllBlockPartials;
 import com.simibubi.create.content.contraptions.base.KineticTileEntity;
 import com.simibubi.create.content.contraptions.base.KineticTileEntityRenderer;
@@ -15,7 +14,6 @@ import com.simibubi.create.content.contraptions.base.flwdata.RotatingData;
 import com.simibubi.create.content.contraptions.relays.elementary.BracketedKineticTileInstance;
 import com.simibubi.create.content.contraptions.relays.elementary.BracketedKineticTileRenderer;
 import com.simibubi.create.content.contraptions.relays.elementary.ICogWheel;
-import net.minecraft.client.model.Model;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 
@@ -27,6 +25,7 @@ public class CogWheelKineticTileInstance extends BracketedKineticTileInstance {
     private PoseStack rotateToAxis(Direction.Axis axis) {
         Direction facing = Direction.fromAxisAndDirection(axis, Direction.AxisDirection.POSITIVE);
         PoseStack poseStack = new PoseStack();
+
         TransformStack.cast(poseStack)
                 .centre()
                 .rotateToFace(facing)
@@ -43,6 +42,7 @@ public class CogWheelKineticTileInstance extends BracketedKineticTileInstance {
             return;
 
         float speed = blockEntity.getSpeed();
+
         Direction.Axis axis = KineticTileEntityRenderer.getRotationAxisOf(blockEntity);
         BlockPos pos = blockEntity.getBlockPos();
         float offset = BracketedKineticTileRenderer.getShaftAngleOffset(axis, pos);

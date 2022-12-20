@@ -1,7 +1,6 @@
 package com.rabbitminers.extendedgears;
 
 import com.rabbitminers.extendedgears.index.ECPartials;
-import com.simibubi.create.foundation.render.CachedBufferer;
 import com.simibubi.create.foundation.render.SuperByteBufferCache;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
