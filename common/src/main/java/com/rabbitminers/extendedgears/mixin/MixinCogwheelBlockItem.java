@@ -2,8 +2,8 @@ package com.rabbitminers.extendedgears.mixin;
 
 import com.rabbitminers.extendedgears.cogwheels.ICustomCogwheel;
 import com.rabbitminers.extendedgears.config.ExtendedCogwheelsConfig;
-import com.simibubi.create.content.contraptions.relays.elementary.CogwheelBlockItem;
-import com.simibubi.create.content.contraptions.relays.elementary.ICogWheel;
+import com.simibubi.create.content.kinetics.simpleRelays.CogwheelBlockItem;
+import com.simibubi.create.content.kinetics.simpleRelays.ICogWheel;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;

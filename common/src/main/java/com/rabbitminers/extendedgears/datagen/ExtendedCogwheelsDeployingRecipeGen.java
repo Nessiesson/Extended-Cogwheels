@@ -9,9 +9,9 @@ import com.rabbitminers.extendedgears.registry.ExtendedCogwheelsBlocks;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.AllTags;
-import com.simibubi.create.content.contraptions.processing.ProcessingRecipe;
-import com.simibubi.create.content.contraptions.processing.ProcessingRecipeBuilder;
-import com.simibubi.create.foundation.utility.recipe.IRecipeTypeInfo;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
+import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
+import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
@@ -111,7 +111,7 @@ public class ExtendedCogwheelsDeployingRecipeGen extends ExtendedCogwheelsProces
 
     @ExpectPlatform
     public static <T extends ProcessingRecipe<?>> ProcessingRecipeBuilder<T> whenTagsPopulated(ProcessingRecipeBuilder<T> builder,
-                                                                                         @Nullable TagKey<Item>... tagKeys) {
+                                                                                               @Nullable TagKey<Item>... tagKeys) {
         throw new AssertionError();
     }
 

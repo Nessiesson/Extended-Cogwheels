@@ -2,7 +2,7 @@ package com.rabbitminers.extendedgears.cogwheels;
 
 import com.jozufozu.flywheel.core.PartialModel;
 import com.rabbitminers.extendedgears.base.data.ICogwheelMaterial;
-import com.simibubi.create.AllBlockPartials;
+import com.simibubi.create.AllPartialModels;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,10 +17,10 @@ public interface ICustomCogwheel{
 
     @Nullable
     default PartialModel getShaftPartialModel() {
-        return AllBlockPartials.COGWHEEL_SHAFT;
+        return AllPartialModels.COGWHEEL_SHAFT;
     }
 
     default PartialModel getPartialModelType() {
-        return AllBlockPartials.SHAFTLESS_COGWHEEL;
+        return AllPartialModels.SHAFTLESS_COGWHEEL;
     }
 }
